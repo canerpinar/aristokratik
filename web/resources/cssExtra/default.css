@@ -1,0 +1,93 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Nov 26, 2015, 1:24:47 PM
+    Author     : caner
+*/
+
+
+
+#header{
+    background-color: bisque;
+}
+#body{
+    
+    background-color: aliceblue;
+    
+}
+#banner{
+    height: 200px;
+    background-image: url(images/backround_map.jpg);
+}
+
+#rightPanel{   
+    background-color:#c7e7f4;
+    border-radius: 5px;
+    width: 20%;
+    left: 65px;
+    top: 10px;
+    
+}
+#container div
+{
+    float: left;
+}
+
+#content div{
+    
+    float: none;
+}
+#content p{
+    text-indent: 20px;
+    text-align: justify;
+}
+#bottom{
+    float: bottom;
+    position: initial;
+    background-color: #d58512;
+}
+#deneme{
+    background-color: #d58512;
+}
+.col-center{
+
+    margin: 0 auto;
+    left: 20px;
+}
+#space{
+    
+    left: 10px;
+    background-color: #d58512;
+}
+#baglanti{
+    font-size: small;
+    margin-left: 10px;
+    background-color: #c7e7f4;
+    border-radius: 10px;
+}
+
+
+@media screen and (max-width:650px){
+    #rightPanel{
+    background-color:yellow;
+    border-radius: 5px;
+    width: 100%;
+    left: 0px;
+    top: 10px;
+
+    }
+
+}
+@media screen and (max-width:1024px){
+    #rightPanel{
+    background-color:#c7e7f4;
+    border-radius: 5px;
+    width: 100%;
+    left: 0px;
+
+    }
+
+}

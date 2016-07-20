@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <h:outputStylesheet library="cssExtra" name="default.css" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <h:outputStylesheet library="css" name="bootstrap.min.css" />
+    </h:head>
+    <h:body id="body">
+     <!--
+     <div id="header">
+            <ui:include src="header.xhtml"/>
+        </div>
+     -->
+        
+        <div id="banner">
+            <ui:include src="banner.xhtml"/>    
+            
+        </div>
+        
+        <div id="menu">
+            <ui:include src="menu.xhtml"/>            
+        </div>
+        
+     <div class="row">
+         
+          
+             
+           
+         <div id="content" class="col-lg-9 col-md-9 col-xs-12 col-center ">
+                    <ui:insert name="content">
+
+
+                        
+                    </ui:insert>            
+        </div>
+                
+  
+        
+         <div id="rightPanel" class="col-lg-3 col-md-3 col-xs-12">
+             <h:form>
+                 <ui:include src="right.xhtml"/> 
+             </h:form>
+                
+
+        </div>
+                 
+                 
+            
+            
+        
+   
+         
+        
+        </div>
+     <f:verbatim><hr/></f:verbatim>
+        
+        <div class="row">
+            <div id="bottom" class="col-md-12 col-xs-12">
+            <ui:include src="bottom.xhtml"/>
+            
+            </div>
+            
+        </div>
+        
+        
+     
+    </h:body>
+
+</html>
+
