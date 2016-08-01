@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<pretty-config xmlns="http://ocpsoft.com/prettyfaces/3.3.0" 
+               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+               xsi:schemaLocation="http://ocpsoft.com/prettyfaces/3.3.0
+                                   		http://ocpsoft.com/xml/ns/prettyfaces/ocpsoft-pretty-faces-3.3.0.xsd">
+
+    
+    
+    
+    <url-mapping>
+        <pattern value="/yonetici"/>
+        <view-id value="/faces/admin/login.xhtml"/>
+    </url-mapping>
+   
+    <url-mapping>
+        <pattern value="/"/>
+        <view-id value="/faces/index.xhtml"/>
+    </url-mapping>
+
+    <url-mapping id="YAZILAR"> 
+          <pattern value="/#{yazi}/"/> 
+          <view-id value="/faces/blog.xhtml" />
+    </url-mapping> 
+    
+   <!-- 
+    <url-mapping> 
+          <pattern value="/login/"/> 
+          <view-id value="/faces/admin/login.xhtml" />
+    </url-mapping>
+    
+    <url-mapping> 
+          <pattern value="/admin/"/> 
+          <view-id value="/faces/admin/admin.xhtml" />
+    </url-mapping>
+  -->
+</pretty-config>

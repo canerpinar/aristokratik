@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta http-equiv="Content-Language" content="tr" />
+        <meta name="keywords" content="aristokrat,aristokrasi,toplum,insan,sosyoloji,psikoloji,
+              felsefe nedir,demokrasi nedir,felsefe dizisi,yaşama dair,bilinen gerçekler" />
+        <meta name="robots" content="index, follow" />
+        <meta name="description" content="aristokratik.com bir düşünce ortamıdır." />
+        <h:outputStylesheet library="cssExtra" name="default.css" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <h:outputStylesheet library="css" name="bootstrap.min.css" />
+        <title>Düşünce Ortamı</title>
+                <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-75377931-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+    </h:head>
+    <h:body id="body">
+     <!--
+     <div id="header">
+            <ui:include src="header.xhtml"/>
+        </div>
+     -->
+        
+        <div id="banner">
+            <ui:include src="banner.xhtml"/>    
+            
+        </div>
+        
+        <div id="menu">
+            <ui:include src="menu.xhtml"/>            
+        </div>
+        
+     <div class="row">
+         
+          
+             
+           
+         <div id="content" class="col-lg-9 col-md-9 col-xs-12 col-center ">
+                    <ui:insert name="content">
+
+
+                        
+                    </ui:insert>            
+        </div>
+                
+  
+        
+         <div id="rightPanel" class="col-lg-3 col-md-3 col-xs-12">
+             <h:form>
+                 <ui:include src="right.xhtml"/> 
+             </h:form>
+                
+
+        </div>
+        </div>
+     <f:verbatim><hr/></f:verbatim>
+        
+     <div class="row" style="top: 30px; position: relative;">
+            <div id="bottom" class="col-md-12 col-xs-12">
+            <ui:include src="bottom.xhtml"/>            
+            </div>
+            
+        </div>
+        
+        
+     
+    </h:body>
+
+</html>
+
