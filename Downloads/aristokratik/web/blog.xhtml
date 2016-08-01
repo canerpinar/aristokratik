@@ -20,12 +20,26 @@
         Hello from Facelets
         <ui:composition template="resources/template.xhtml">
             <ui:define name="content">
-                <div style="top: 10px;">
-                    <b>#{yazilarBean.baslik}</b><br/>
+                <div itemscope="" itemtype="http://schema.org/BlogPosting">
+                <h2 style="top: 10px;">
+                    #{yazilarBean.baslik}
+                </h2>
+                <div class="byline">
+                                Written by
+                                <span itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+                                    <span itemprop="name">
+                                        <a href="https://www.facebook.com/profile.php?id=100005964858629" itemprop="url" rel="author">Burak Turkmen</a>
+                                    </span>
+                                </span>
+                                
                 </div>
-                <div style="position: relative;top:40px; text-indent: 30px; text-align: justify; font-family: sans-serif; line-height: 150%;">
+                
+                <div style="position: relative;top:40px; text-indent: 30px; text-align: justify; font-family: sans-serif; line-height: 150%;" itemprop="articleBody">
                     <h:outputText value="#{yazilarBean.yaziContent}" escape="false/"></h:outputText>
                 </div>
+                    
+                </div>
+
                     
            
             </ui:define>

@@ -15,16 +15,18 @@
                 <h:dataTable value="#{yazilarBean.listeYazi}" var="yazi">
                     <h:column>
                         
-                        <h:commandLink value="#{yazi.baslik}" action="#{yazilarBean.getYaziLink(yazi)}">                            
-                            <f:verbatim><hr></hr></f:verbatim>
-                        </h:commandLink>
-
+                            
+                        
+                            <h:commandLink value="#{yazi.baslik}" action="#{yazilarBean.getYaziLink(yazi)}">                            
+                                <f:verbatim><hr></hr></f:verbatim>
+                            </h:commandLink>
+                    
                         
                     </h:column>
                 
                 
                 </h:dataTable>
-                
+            
             
             
             
