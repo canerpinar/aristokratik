@@ -84,7 +84,7 @@ public class yazilarBean {
         
         listeYazi=new Yazilar().getYazilar();
         Collections.reverse(listeYazi);
-       return listeYazi;
+        return listeYazi;
     }
 
     public void setListeYazi(List<Yazi> listeYazi) {
@@ -106,12 +106,10 @@ public class yazilarBean {
             
     }
     
-    public String getYaziLink(Yazi yazi){
+    public void getYaziLink(Yazi yazi){
         yaziContent=yazi.getContent();
         yaziURL=yazi.getLink();
         baslik=yazi.getBaslik();
-
-        return "blog.xhtml?faces-redirect=true&yazi="+yaziURL;
     }
     
     public void save() throws SQLException, NamingException{

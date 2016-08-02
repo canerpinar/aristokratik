@@ -17,11 +17,13 @@
                         
                             
                         
-                            <h:commandLink value="#{yazi.baslik}" action="#{yazilarBean.getYaziLink(yazi)}">                            
+                        <h:link value="#{yazi.baslik}" outcome="blog.xhtml?faces-redirect=true"  binding="#{yazilarBean.getYaziLink(yazi)}">
+                            <f:param name="yazi" value="#{yazi.link}"/>  
+                            <f:metadata>
+                                <f:viewAction action="#{yazilarBean.getYaziLink(yazi)}"/>
+                            </f:metadata>
                                 <f:verbatim><hr></hr></f:verbatim>
-                            </h:commandLink>
-                    
-                        
+                        </h:link>                                            
                     </h:column>
                 
                 
