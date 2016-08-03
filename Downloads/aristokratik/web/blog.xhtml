@@ -22,7 +22,7 @@
             <ui:define name="content">
                 <div itemscope="" itemtype="http://schema.org/BlogPosting">
                 <h2 style="top: 10px;">
-                    #{yazilarBean.baslik}
+                    #{blogBean.yazi.baslik}
                 </h2>
                 <div class="byline">
                                 Written by
@@ -35,7 +35,12 @@
                 </div>
                 
                 <div style="position: relative;top:40px; text-indent: 30px; text-align: justify; font-family: sans-serif; line-height: 150%;" itemprop="articleBody">
-                    <h:outputText value="#{yazilarBean.yaziContent}" escape="false/"></h:outputText>
+                    
+                    
+                    <img src="/resources/images/images.jpg" />                   
+                    <h:outputText value="#{blogBean.yazi.content}" escape="false/">                    
+                    </h:outputText>
+                    
                 </div>
                     
                 </div>

@@ -81,6 +81,20 @@ public class DAO {
         return yazi;
     }
     
+    public Yazi getYazi(String link){        
+        ResultSet set=null;
+        Yazi yazi=new Yazi();
+        try {
+            set=statement.executeQuery("select baslik,yazi from yazilar where link='"+link+"'");
+            set.next();
+            yazi.setBaslik(set.getString("baslik"));
+            yazi.setContent(set.getString("yazi"));
+        } catch (SQLException ex) {
+            Logger.getLogger(DAO.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        return yazi;
+    }
+    
     public void daoClose() throws SQLException, NamingException{
         statement.close();
         conn.close();
